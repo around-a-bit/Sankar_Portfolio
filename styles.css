@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.color{
+	color:#FF9538 ;
+    text-decoration: none;
+}
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    position: sticky;
+    top: 0px;
+}
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+/* Navigation Bar:List Styling*/
+ul {
+    display:flex;
+    align-items:center;
+    padding: 3px;/
+}
+ul li {
+    list-style: none;
+    font-size: 0.9rem;
+    align-items: center;
+}
+ul.nav-ul li a {
+    color: aliceblue;
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+ul li a:hover {
+    color: black;
+}
+
+/* Home Section */
+#home::before {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home::before.overlay {
+    height: 950px;
+	background-attachment: fixed;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+} 
+#home p,h1,h4 {
+    color: black ;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Garamond, serif;
+} 
+
+/* About page Section */
+#about{
+	padding: 80px 0;
+    text-decoration: none;
+
+}
+ul.about-list{ 
+    margin: 30px 0 0 ;
+}
+ul.about-list li{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+	font-size: 16px;
+	line-height: 30px;
+}
+ul.about-list a{
+    font-family: 'Open Sans', sans-serif;
+    color:#FF9D10;
+}
+#img-responsive{
+    height: 50%;
+    width:70%;
+    align-items: center;
+}
+
+/* Project cards */
+#my_projects{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    align-items: center;;
+    text-decoration: none;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); /* Add shadow */
+    transition: 0.3s;
+    align-items: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 #FF9538;
+}
+.card-body {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.card-text{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align:left;
+}
+
+/* Contact Me Section */
+#contact_me h2{
+    padding: 30px 0;
+    font-size: 40px;
+    font-family: Garamond, serif;
+    text-align: center;
+}
+#contact{
+    font-size: 17px;
+    font-family: Garamond, serif;
+    display:flex;
+    text-align: center;
+    color: #212121;
+    text-decoration: none;
+}
+#contact strong{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Social Links Section */
+#social{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+    justify-content: center;
+}
+ul.social li {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+ul.social button{
+    background-size: cover; 
+    width:30px; 
+    height: 30px; 
+    border: none; 
+    cursor: pointer;
+}
+#quote{
+    text-decoration: none;
+    display:flex;
+    text-align: center;
+    font-size: 25px;
+    font-family: Garamond, serif;
+    cursor: pointer;
+    border-radius: 50px;
+    justify-content: center;
+}
+#quote:hover {
+    box-shadow: 0 1px 18px 0 #FF9538;
+}
